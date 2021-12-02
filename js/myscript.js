@@ -31,7 +31,6 @@ function generatePass(){
 
     document.getElementById("suggested_psw").innerHTML = `La password che ti è stata fornita è: <span style='color: ${colPreferito} !important;'>${password}</span>`;
 
-
     return false;
 }
 
