@@ -15,20 +15,22 @@ if (cognome == ""){
 
 let nomeCognome = nome + ' ' + cognome;
 
-document.getElementById('welcome').innerHTML = "Benvenuto " + nomeCognome;
+document.getElementById('welcome').innerHTML = `Benvenuto <span id="fullname">${nomeCognome}</span>`;
 document.getElementById("fav_col_box").style.display = 'block';
 
 
 function generatePass(){
 
-    const colPreferito = document.getElementById('my_fav_col');
-    let colPreferitoText = colPreferito.options[colPreferito.selectedIndex].text.toLowerCase();
+    const select = document.getElementById('my_fav_col');
+    let colPreferito = select.options[select.selectedIndex].value;
+    let colPreferitoText = select.options[select.selectedIndex].text.toLowerCase();
     
     const maxNumber = 21;
     let randomNumber = Math.floor(1 + Math.random() * maxNumber); /* numero tra 1 e max */    
     let password = nome.toLowerCase() + cognome.toLowerCase() + colPreferitoText + randomNumber;
 
-    document.getElementById("suggested_psw").innerHTML = `La password che ti è stata fornita è: <span>${password}</span>`;
+    document.getElementById("suggested_psw").innerHTML = `La password che ti è stata fornita è: <span style='color: ${colPreferito} !important;'>${password}</span>`;
+
 
     return false;
 }
