@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Generatore di password</h1>
+            <hr>
+            <h2 id='welcome'></h2>
+            
+            <div id='fav_col_box' name='colore_pref'>
+                
+                <label for="my_fav_col">Il tuo colore preferito:</label>
+                <select name="my_fav_col" id="my_fav_col">
+                    <option value="white">Bianco</option>
+                    <option value="brown">Marrone</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Giallo</option>
+                    <option value="orange">Arancio</option>
+                    <option value="red">Rosso</option>
+                    <option value="blue">Blu</option>
+                    <option value="violet">Viola</option>
+                    <option value="fucsia">Fucsia</option>
+                    <option value="black">Nero</option>
+                    <option value="other">Altro</option>
+                </select>
+                <button onclick='return userConfirm();'>Conferma</button>
+            </div>
+    
+            <h3 id='suggested_psw'></h3>
+        </div>
+
+        
+
+        
+        <script type="text/javascript" src="js/myscript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+
+
+body {
+    background: url("https://dnewpydm90vfx.cloudfront.net/wp-content/uploads/2020/01/Sicurezza-delle-password.jpg");
+}
+
+#fav_col_box {
+    display: none;
+    margin: 40px 0;
+}
+
+#suggested_psw span {
+    display: block;
+    color: rgb(194, 175, 3);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.container {
+    background-color: rgba(255,255,255, 0.2);
+    box-shadow: 1px 5px 5px 5px black ;
+    width: 500px;
+    max-width: 1100px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    color: #ccc;
+}
+
+
+h1 {
+    color: white;
+}
